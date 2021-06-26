@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+    background-color: #EEE;
+}
+
+.top-info {
+    display: flex;
+    padding: 12px 2em;    
+    justify-content: flex-end;
+}
+
+.top-info > * {
+    margin: 0 5px;
+}
+
+.top-info div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.top-info p {
+    margin: 0;
+    font-size: 12px;
+    color: rgb(70, 70, 70);
+}
+
+.top-info a {
+    text-decoration: none;
+    margin: 0;
+    font-size: 12px;
+    color: rgb(34, 111, 255);
+}
+
+.top-info button {
+
+}
+
+.btn {
+    background-color: #0077C5;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 0 2em;
+    padding-left: 3em;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.white-lock::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background-image: url('../assets/img/white-lock.svg');
+    position: absolute;
+    left: 16px;
+}
