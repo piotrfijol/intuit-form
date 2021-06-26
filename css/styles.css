@@ -3,12 +3,15 @@ body {
     padding: 0;
     font-family: 'Helvetica';
     background-color: #EEE;
+    overflow: scroll;
 }
 
 .top-info {
     display: flex;
-    padding: 12px 2em;    
+    padding: 10px 1.7em;    
+    height: 34px;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .top-info > * {
@@ -16,14 +19,19 @@ body {
 }
 
 .top-info div {
-    margin-top: auto;
-    margin-bottom: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .top-info p {
     margin: 0;
-    font-size: 12px;
+    font-size: 11.5px;
     color: rgb(70, 70, 70);
+    text-align: center;
+    letter-spacing: .3px;
+    padding-bottom: 5px;
 }
 
 .top-info a {
@@ -33,17 +41,14 @@ body {
     color: rgb(34, 111, 255);
 }
 
-.top-info button {
-
-}
+.top-info button {}
 
 .btn {
     background-color: #0077C5;
     color: #FFF;
     border: none;
     border-radius: 5px;
-    padding: 0 2em;
-    padding-left: 3em;
+    padding: .5em 1.6em;
     display: flex;
     align-items: center;
     position: relative;
@@ -59,6 +64,48 @@ body {
     width: 16px;
     height: 20px;
     background-image: url('../assets/img/white-lock.svg');
-    position: absolute;
-    left: 16px;
+    margin-right: 7px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.container {
+    margin: auto;
+    padding-top: 1.5em;
+    width: 350px;
+}
+
+.info {
+}
+
+.info .logo {
+    margin: auto;
+    width: 115px;
+    height: 40px;
+    background-image: url('/assets/img/logo.png');
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    letter-spacing: .8px;
+    font-size: 18px;
+}
+
+.feature img {
+    margin-right: .3em;
+}
+.feature p {
+    color: rgb(110, 110, 110);
 }
