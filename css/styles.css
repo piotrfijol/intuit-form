@@ -3,7 +3,11 @@ body {
     padding: 0;
     font-family: 'Helvetica';
     background-color: #EEE;
-    overflow: scroll;
+    overflow-x: hidden
+}
+
+p {
+    margin: 0;
 }
 
 .top-info {
@@ -48,14 +52,19 @@ body {
     color: #FFF;
     border: none;
     border-radius: 5px;
-    padding: .5em 1.6em;
-    display: flex;
-    align-items: center;
-    position: relative;
 }
 
 .btn:hover {
     cursor: pointer;
+}
+
+.white-lock {
+    
+    padding: .5em 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .white-lock::before {
@@ -68,18 +77,15 @@ body {
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
 }
 
 .container {
     margin: auto;
     padding-top: 1.5em;
-    width: 350px;
-}
-
-.info {
-}
+    width: 380px;
+} 
 
 .info .logo {
     margin: auto;
@@ -91,7 +97,7 @@ body {
 .features {
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 
@@ -108,4 +114,111 @@ body {
 }
 .feature p {
     color: rgb(110, 110, 110);
+    margin: 1em 0;
+}
+
+.form-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 600px;
+    background-color: #FFF;
+    text-align: center;
+    padding: 2em;
+    border: 1px solid rgb(190, 190, 190);
+    font-size: 14px;
+    margin-top: .2em;
+    position: relative;
+    padding-bottom: 6em;
+}
+
+.form-header {
+    font-size: 24px;
+    color: rgb(60, 60, 60);
+    margin-bottom: .8em;
+}
+
+.form-description {
+    color: rgb(100, 100, 100);
+}
+
+.form-wrapper a {
+    text-decoration: none;
+    color: rgb(74, 137, 255);
+} 
+
+form {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.7em;
+    padding-left: .2em;
+}
+
+.input-row:first-child {
+    margin-top: 1.8em;
+}
+
+.input-row input {
+    padding: .5em;
+    margin-top: .7em;
+}
+
+.input-description {
+    font-size: 10px;
+    margin-top: .7em;
+}
+
+.btn.submit {
+    margin-top: 2.3em;
+    padding: .8em;
+    font-size: 16px;
+}
+
+.form-terms {
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+    width: 97%;
+    margin: auto;
+    margin-top: 1.5em;
+    line-height: 1.5em;
+}
+
+label {
+    color: rgb(70, 70, 70)
+}
+
+.form-footer {
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 2em;
+    font-size: 10px;
+    width: 100px;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    position: absolute;
+    color:rgb(110, 110, 110)
+}
+
+footer {
+    width: 100vw;
+    min-height: 1em; 
+    background-color: #FFF;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a {
+    color:rgb(74, 137, 255);
+    text-decoration: none;
+    display: block;
+    padding: 1.6em 1.5em;
+    font-size: 14px;
 }
