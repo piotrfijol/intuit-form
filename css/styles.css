@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Helvetica';
     background-color: #EEE;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 p {
@@ -188,6 +188,7 @@ form {
     margin: auto;
     margin-top: 1.5em;
     line-height: 1.5em;
+    font-style: italic;
 }
 
 label {
@@ -211,8 +212,6 @@ footer {
     width: 100vw;
     min-height: 1em; 
     background-color: #FFF;
-    position: absolute;
-    bottom: 0;
 }
 
 footer a {
@@ -221,4 +220,24 @@ footer a {
     display: block;
     padding: 1.6em 1.5em;
     font-size: 14px;
+}
+
+.terms {
+    font-size: 12px;
+    max-width: 730px;
+    text-align: center;
+    margin: 2em auto 6em auto;
+    line-height: 1.5em;
+    color: rgb(100, 100, 100)
+}
+
+.terms-links {
+    list-style-type: none;
+    margin: .5em 0;
+    padding: 0;
+}
+
+.terms-links li {
+    display: inline-block;
+    margin: 0 .5em;
 }
